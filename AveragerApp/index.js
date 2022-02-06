@@ -107,8 +107,8 @@ function updateResults(className){
 
     
   // Display sum
-  elementref = document.querySelector("#sum");
-  element = elementref.getElementsByTagName("span");
+  let elementref = document.querySelector("#sum");
+  let element = elementref.getElementsByTagName("span");
   element[0].innerHTML = adder(selectedArray); 
 
   // Display average
@@ -117,8 +117,8 @@ function updateResults(className){
   element[0].innerHTML = averg(selectedArray); 
   
   // Display selected
-  let elementref = document.querySelector("#selected");
-  let element = elementref.getElementsByTagName("span");
+  elementref = document.querySelector("#selected");
+  element = elementref.getElementsByTagName("span");
   element[0].innerHTML = selectedArray.join();  
   
   // Display amount
